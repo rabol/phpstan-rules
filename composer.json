@@ -1,0 +1,60 @@
+{
+    "name": "rabol/phpstan-rules",
+    "type": "phpstan-extension",
+    "description": "Set of PHPStan rules",
+    "license": "MIT",
+    "keywords": [
+        "phpstan",
+        "phpstan-rules",
+        "phpstan-extreme-rules"
+    ],
+    "authors": [
+        {
+            "name": "Steen Rabol",
+            "email": "steen@rabol.com"
+        }
+    ],
+    "homepage": "https://github.com/rabol/phpstan-rules",
+    "support": {
+        "issues": "https://github.com/rabol/phpstan-rules/issues",
+        "source": "https://github.com/rabol/phpstan-rules"
+    },
+    "require": {
+        "php": "^8.1, <8.3",
+        "phpstan/phpstan": "^1.8",
+        "nikic/php-parser": "^4.14"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.4",
+        "infection/infection": "^0.27.0",
+        "phpunit/phpunit": "^10.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rabol\\PHPStan\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rabol\\PHPStan\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.1.0"
+        },
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
+    },
+    "extra": {
+        "phpstan": {
+            "includes": [
+                "rules.neon"
+            ]
+        }
+    },
+    "prefer-stable": true
+}
