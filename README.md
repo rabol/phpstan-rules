@@ -1,6 +1,6 @@
 # phpstan-rules
 
-[![Continuous Integration](https://github.com/sidz/phpstan-rules/workflows/Continuous%20Integration/badge.svg)](https://github.com/sidz/phpstan-rules/actions)
+[![Continuous Integration](https://github.com/rabol/phpstan-rules/workflows/Continuous%20Integration/badge.svg)](https://github.com/sidz/phpstan-rules/actions)
 
 Provides additional rules for [`phpstan/phpstan`](https://github.com/phpstan/phpstan).
 
@@ -9,14 +9,14 @@ Provides additional rules for [`phpstan/phpstan`](https://github.com/phpstan/php
 Run
 
 ```sh
-composer require --dev sidz/phpstan-rules
+composer require --dev rabol/phpstan-rules
 ```
 
 If you use [PHPStan extension installer](https://github.com/phpstan/extension-installer), you're all set. If not, you need to manually register all the rules in your `phpstan.neon`:
 
 ```neon
 includes:
-    - vendor/sidz/phpstan-rules/rules.neon
+    - vendor/rabol/phpstan-rules/rules.neon
 ```
 
 Each rule by default ignores the following numbers: `0` and `1`. This can be configured by adding the following parameter to your `phpstan.neon`:
