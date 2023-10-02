@@ -1,5 +1,5 @@
 services:
     -
-        class: Rabol\Rules\NoDuplicateMemberName\NoDuplicateMemberNameRule
+        class: Rabol\PHPStan\Rules\NoDuplicateMemberName\NoDuplicateMemberNameRule
         tags:
             - phpstan.rules.rule
